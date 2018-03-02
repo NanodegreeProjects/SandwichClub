@@ -11,7 +11,6 @@ import com.squareup.picasso.Picasso;
 import com.udacity.sandwichclub.model.Sandwich;
 import com.udacity.sandwichclub.utils.JsonUtils;
 
-import java.util.List;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -22,7 +21,6 @@ public class DetailActivity extends AppCompatActivity {
     TextView descriptionIv;
     TextView ingredientsIv;
     TextView also_knownIv;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,22 +71,21 @@ public class DetailActivity extends AppCompatActivity {
 
     private void populateUI(Sandwich sandwich) {
         descriptionIv.append(sandwich.getDescription());
-        String space = " ";
 
         if (sandwich.getPlaceOfOrigin().isEmpty()) {
-            ingredientsIv.append(space + getString(R.string.detail_error_message));
+            ingredientsIv.setText(R.string.detail_error_message);
         } else {
-            ingredientsIv.append(space + sandwich.getIngredients().toString());
+            ingredientsIv.setText(sandwich.getIngredients().toString());
         }
         if (sandwich.getPlaceOfOrigin().isEmpty()) {
-            originIv.append(space + getString(R.string.detail_error_message));
+            originIv.setText(R.string.detail_error_message);
         } else {
-            originIv.append(space + sandwich.getPlaceOfOrigin());
+            originIv.setText(sandwich.getPlaceOfOrigin());
         }
         if (sandwich.getAlsoKnownAs().isEmpty()) {
-            also_knownIv.append(space + getString(R.string.detail_error_message));
+            also_knownIv.setText(R.string.detail_error_message);
         } else {
-            also_knownIv.append(space + sandwich.getAlsoKnownAs().toString());
+            also_knownIv.setText(sandwich.getAlsoKnownAs().toString());
         }
 
     }
