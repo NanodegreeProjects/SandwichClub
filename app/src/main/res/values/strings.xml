@@ -13,6 +13,7 @@
 
     <!-- Error messages-->
     <string name="detail_error_message">Sandwich data not available</string>
+    <string name="not_available">Not available</string>
 
     <string-array name="sandwich_names">
         <item>Ham and cheese sandwich</item>
@@ -34,8 +35,7 @@
             between two slices of bread. The bread is sometimes buttered and/or toasted. Vegetables
             like lettuce, tomato, onion or pickle slices can also be included. Various kinds of
             mustard and mayonnaise are also
-            common.\",\"image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Grilled_ham_and_cheese_014.JPG/800px-Grilled_ham_and_cheese_014.JPG\",\"ingredients\":[\"Sliced
-            bread\",\"Cheese\",\"Ham\"]}
+            common.\",\"image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Grilled_ham_and_cheese_014.JPG/800px-Grilled_ham_and_cheese_014.JPG\",\"ingredients\":[\"Sliced bread\",\"Cheese\",\"Ham\"]}
         </item>
         <item>
             {\"name\":{\"mainName\":\"Bosna\",\"alsoKnownAs\":[\"Bosner\"]},\"placeOfOrigin\":\"Austria\",\"description\":\"Bosna

@@ -70,23 +70,22 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void populateUI(Sandwich sandwich) {
-        descriptionIv.append(sandwich.getDescription());
+        descriptionIv.setText(sandwich.getDescription());
 
         if (sandwich.getPlaceOfOrigin().isEmpty()) {
-            ingredientsIv.setText(R.string.detail_error_message);
+            ingredientsIv.setText(R.string.not_available);
         } else {
             ingredientsIv.setText(sandwich.getIngredients().toString());
         }
         if (sandwich.getPlaceOfOrigin().isEmpty()) {
-            originIv.setText(R.string.detail_error_message);
+            originIv.setText(R.string.not_available);
         } else {
             originIv.setText(sandwich.getPlaceOfOrigin());
         }
         if (sandwich.getAlsoKnownAs().isEmpty()) {
-            also_knownIv.setText(R.string.detail_error_message);
+            also_knownIv.setText(R.string.not_available);
         } else {
             also_knownIv.setText(sandwich.getAlsoKnownAs().toString());
         }
-
     }
 }
