@@ -1,7 +1,5 @@
 package com.udacity.sandwichclub.utils;
 
-import android.util.Log;
-
 import com.udacity.sandwichclub.model.Sandwich;
 
 import org.json.JSONArray;
@@ -52,7 +50,7 @@ public class JsonUtils {
                 try {
                     list.add(array.getString(i));
                 } catch (JSONException e) {
-                    Log.e("error", "We have problems!", e);
+                    e.printStackTrace();
                 }
             }
         }
